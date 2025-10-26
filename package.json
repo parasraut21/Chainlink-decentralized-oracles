@@ -1,0 +1,21 @@
+{
+  "name": "chainlink-price-feed-contract",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "A Chainlink price feed consumer contract that fetches latest price data from decentralized oracles.",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.js",
+    "lint": "solhint 'contracts/*.sol'"
+  },
+  "devDependencies": {
+    "@chainlink/contracts": "1.5.0",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.22.3",
+    "solhint": "^3.3.7"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
