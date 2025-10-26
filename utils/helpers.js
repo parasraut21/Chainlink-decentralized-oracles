@@ -1,3 +1,5 @@
+const { NETWORKS } = require("./constants");
+
 /**
  * Utility functions for Chainlink contract interactions
  */
@@ -8,8 +10,7 @@
  * @returns {boolean} True if it's a local network
  */
 function isLocalNetwork(networkName) {
-    const localNetworks = ["hardhat", "localhost", "ganache"];
-    return localNetworks.includes(networkName);
+    return NETWORKS.LOCAL.includes(networkName);
 }
 
 /**
